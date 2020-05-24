@@ -18,8 +18,8 @@ function makeGrid(a, b, c) {
       var row = c.insertRow(m);
       for (let k = 0; k < b; k++) {
         let cell = row.insertCell(k);
-        cell.addEventListener('click', function(event) {
-          event.target.style.backgroundColor = document.getElementById('colorPicker').value;
+        cell.addEventListener('click', function(eve) {
+          eve.target.style.backgroundColor = document.getElementById('colorPicker').value;
         });
       }
     }
